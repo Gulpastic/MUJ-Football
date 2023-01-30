@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "./Logo";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
-  { text: "About Us", href: "/about" },
+  { text: "About", href: "/about" },
+  { text: "FAQs", href: "/faqs" },
+  { text: "Captains", href: "/captains" },
   { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a>
-            <h1 className="logo">CodeWithMarish</h1>
+            <h1>MUJ Football</h1>
           </a>
         </Link>
         <div
